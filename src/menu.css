@@ -1,0 +1,23 @@
+.Menu{
+  
+  top: 80px;
+  width: 300px;
+  position: fixed;
+  border-right: 1px solid #000;
+  height: 100%;
+}
+.links{
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.links ul ul{
+    list-style-type: none;
+}
+.links ul li{
+    margin-top: 13px;
+}
+.links a{
+    text-decoration: none;
+    font-size: 20px;
+}

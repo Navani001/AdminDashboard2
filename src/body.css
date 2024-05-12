@@ -1,0 +1,76 @@
+.Con{
+    margin-left: 360px;
+   margin-top: 80px;
+   width: 70%;
+   height: 85%;
+   position: fixed;
+   overflow-y: scroll; 
+
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Con::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .Con {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+*{
+    margin:0;
+    padding: 0;
+}
+.Con ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+li{
+    font-size: 30px;
+}
+.Con ul li ul{
+    display: block;
+    font-size: 10px;
+}
+span{
+    margin-top: -30px;
+    font-size: 20px;
+}
+.headering{
+    list-style-type: none;
+    display: block;
+   
+    margin-top: 20px; 
+}
+.project{
+    display: flex;
+}
+.projectlist{
+    width: 900px;
+}
+.graph{
+position: relative;
+margin-top: 20px;
+border: 1px solid #000;
+border-radius: 7px;
+}
+.graph h1{
+    padding: 10px;
+}
+
+.bt{
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.table{
+align-items: center;
+border: 1px solid #000;
+border-radius: 5px;
+}
+.table h1{
+    padding: 10px;
+}
