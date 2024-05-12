@@ -9,22 +9,7 @@ import { useState } from 'react';
 const Login = () => {
   const [inputs, setInputs] = useState({});
   const navigate = useNavigate();
-  const handleSubmit = async(event) => {
-    
-    event.preventDefault();
-    const response=await axios.post('http://localhost:2500/', {
-      username: inputs.username,
-      userpassword:inputs.password
-    })
-    
-      if (response.data.message==='success') {
-        navigate('/Dashboard')
-        } else 
-        {
-        navigate('/')
-        }
-      
-  }
+
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -54,7 +39,7 @@ const Login = () => {
           Get Access to your account
         </p>
         <hr className={styles.karr} />
-        <form  onSubmit={handleSubmit} method='post'>
+        <form method='post'>
         <p className={styles.input}>
          
           <span className={styles.info}>User Name</span><br />
@@ -66,9 +51,11 @@ const Login = () => {
           <input type="password" placeholder="Enter your password" name="password" maxLength="10" value={inputs.password || ""} 
         onChange={handleChange} />
         </p>
+          <a href="/Dashboard">
         <button type="submit" className="btn btn-primary">
             Submit
           </button>
+          </a>
           </form>
       </div>
     </div>
